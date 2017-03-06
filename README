@@ -23,4 +23,37 @@ Each tool gets a page. Sub-sections are hashpaths. Javascript must load everythi
 
 /error/ (Contains common error pages with redirection back to the home page)
 
-That is it for static data. 
+---
+Summary of Modules:
+
+auth
+	User login
+	Alt Tie In
+	Managing your account basically
+client
+	The "browsing" area of the site. News / blogs / snipits.
+	User documentation as well.
+	Should probably contain an editor.
+comms
+	How people get hooked up to various services.
+fleet
+	Fleet tracking
+	Scheduling
+	Timers
+combat
+	Combat logs
+srp
+	SRP Request and approval
+doctrine
+	Doctrine ships
+	Skillplans
+	Corp Readiness
+hr
+	Applications and what not.
+admin
+	Admin panel. Server can be configured here.
+
+While anyone can get all of the source code to this public site, without valid JWT keys, they can't do anything or load important data.
+
+* Note that classified data like blogs should be stored in the database, hidden behind an API key.
+* Fast caching can be setup if needed.
